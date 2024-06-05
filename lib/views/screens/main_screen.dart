@@ -14,7 +14,7 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
-  List<Widget> pages = [const HomeScreen(), ResultsScreen(), ProfileScreen()];
+  List<Widget> pages = [ HomeScreen(), ResultsScreen(), ProfileScreen()];
   List<Widget> titles = [
     const Text("Home Page"),
     const Text("Statistics"),
