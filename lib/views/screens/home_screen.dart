@@ -77,10 +77,7 @@ class HomeScreen extends StatelessWidget {
             final course = snapshot.data;
             return InkWell(
               onTap: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => CourseScreen(course: course)));
+                Navigator.pushNamed(context, "/course", arguments: course);
               },
               child: Container(
                 clipBehavior: Clip.hardEdge,

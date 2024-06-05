@@ -19,14 +19,7 @@ class LessonWidget extends StatelessWidget {
             children: [
               InkWell(
                 onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => LessonScreen(
-                        lesson: lesson,
-                      ),
-                    ),
-                  );
+                  Navigator.pushNamed(context, "/lesson", arguments: lesson);
                 },
                 child: Container(
                   padding: EdgeInsets.all(8),

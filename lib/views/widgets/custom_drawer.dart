@@ -27,14 +27,7 @@ class CustomDrawer extends StatelessWidget {
           ),
           ListTile(
             onTap: () {
-              Navigator.pushReplacement(
-                context,
-                MaterialPageRoute(
-                  builder: (ctx) {
-                    return const MainScreen();
-                  },
-                ),
-              );
+              Navigator.pushReplacementNamed(context, "/main");
             },
             title: const Text(
               "Bosh sahifa",
@@ -45,14 +38,7 @@ class CustomDrawer extends StatelessWidget {
           ),
           ListTile(
             onTap: () {
-              Navigator.pushReplacement(
-                context,
-                MaterialPageRoute(
-                  builder: (ctx) {
-                    return const ToDoScreen();
-                  },
-                ),
-              );
+              Navigator.pushReplacementNamed(context, "/todo");
             },
             title: const Text(
               "ToDo",
@@ -63,14 +49,7 @@ class CustomDrawer extends StatelessWidget {
           ),
           ListTile(
             onTap: () {
-              Navigator.pushReplacement(
-                context,
-                MaterialPageRoute(
-                  builder: (ctx) {
-                    return const NoteScreen();
-                  },
-                ),
-              );
+              Navigator.pushReplacementNamed(context, "/note");
             },
             title: const Text(
               "Note",
@@ -81,14 +60,7 @@ class CustomDrawer extends StatelessWidget {
           ),
           ListTile(
             onTap: () {
-              Navigator.pushReplacement(
-                context,
-                MaterialPageRoute(
-                  builder: (ctx) {
-                    return SettingsScreen();
-                  },
-                ),
-              );
+              Navigator.pushReplacementNamed(context, "/settings");
             },
             title: const Text(
               "Settings",

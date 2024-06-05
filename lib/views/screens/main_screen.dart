@@ -42,16 +42,16 @@ class _MainScreenState extends State<MainScreen> {
                 children: [
                   NavigationRail(
                       onDestinationSelected: _onItemTapped,
-                      destinations: [
-                        const NavigationRailDestination(
+                      destinations: const [
+                        NavigationRailDestination(
                           icon: Icon(Icons.home),
-                          label: const Text("Home"),
+                          label: Text("Home"),
                         ),
-                        const NavigationRailDestination(
+                        NavigationRailDestination(
                           icon: Icon(Icons.bar_chart_rounded),
                           label: Text("Statistics"),
                         ),
-                        const NavigationRailDestination(
+                        NavigationRailDestination(
                           icon: Icon(Icons.person),
                           label: Text("Profile"),
                         ),
